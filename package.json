@@ -1,0 +1,27 @@
+{
+  "name": "wd-browserstack",
+  "version": "1.0.0",
+  "description": "Test github.com:admc/wd.git with browserstack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/browserstack/wd-browserstack.git"
+  },
+  "keywords": [
+    "wd",
+    "browserstack",
+    "wd-browserstack",
+    "webdriver",
+    "selenium"
+  ],
+  "author": "BrowserStack",
+  "bugs": {
+    "url": "https://github.com/browserstack/wd-browserstack/issues"
+  },
+  "homepage": "https://github.com/browserstack/wd-browserstack#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "colors": "^1.1.2",
+    "wd": "^0.4.0"
+  }
+}
