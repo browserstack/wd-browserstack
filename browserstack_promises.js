@@ -35,7 +35,6 @@ var desired = {
   build: "WD BrowserStack Sample Test"
 };
 
-/* jshint evil: true */
 browser
   .init(desired)
   .get("http://admc.io/wd/test-pages/guinea-pig.html")
