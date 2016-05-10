@@ -26,8 +26,9 @@ var desired = {
   browser: 'chrome',
   browser_version: '',
   project: "examples",
-  name: "This is an example async test",
-  build: "WD BrowserStack Sample Test"
+  name: "This is an example local test",
+  build: "WD BrowserStack Sample Test",
+  "browserstack.local": true
 };
 
 browser.init(desired, function() {

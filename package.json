@@ -18,7 +18,15 @@
     "url": "https://github.com/browserstack/wd-browserstack/issues"
   },
   "homepage": "https://github.com/browserstack/wd-browserstack#readme",
+  "scripts": {
+    "test": "node browserstack_async.js",
+    "test_local": "node scripts/test_local.js",
+    "test_async": "node browserstack_async.js",
+    "test_single": "node browserstack_promises.js",
+    "test_promises": "node browserstack_promises.js"
+  },
   "dependencies": {
+    "browserstack-local": "^0.1.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.2.0",
     "colors": "^1.1.2",
