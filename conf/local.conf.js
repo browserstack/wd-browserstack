@@ -5,11 +5,12 @@ exports.config = {
   seleniumHost: 'hub-cloud.browserstack.com',
   seleniumPort: 80,
 
-  test: '../tests/single_test.js',
+  test: '../tests/local_test.js',
 
   capabilities: [{
     browserName: 'chrome',
-    name: "single_test",
-    build: "wd-browserstack"
+    name: "local_test",
+    build: "wd-browserstack",
+    'browserstack.local': true
   }]
 }
