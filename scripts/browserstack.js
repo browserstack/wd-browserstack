@@ -44,6 +44,7 @@ var test = require(config.test);
 for(var i in config.capabilities){
   var caps = config.capabilities[i];
   if(caps["browserstack.local"]){
+    // Code to start browserstack local before start of test and stop browserstack local after end of test
     console.log("Connecting local");
     var bs_local = new browserstack.Local();
     bs_local.start({'key': accessKey }, function(error) {
