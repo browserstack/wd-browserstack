@@ -26,7 +26,7 @@
     "parallel": "node scripts/browserstack.js ../conf/parallel.conf.js"
   },
   "dependencies": {
-    "browserstack-local": "^0.1.0",
+    "browserstack-local": "^1.0.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.2.0",
     "colors": "^1.1.2",
