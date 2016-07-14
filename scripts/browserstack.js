@@ -9,9 +9,6 @@ chai.use(chaiAsPromised);
 chai.should();
 chaiAsPromised.transferPromiseness = wd.transferPromiseness;
 
-var username = process.env.BROWSERSTACK_USERNAME || config.user;
-var accessKey = process.env.BROWSERSTACK_ACCESS_KEY || config.key;
-
 wd.addPromiseChainMethod(
   'onQuit', function(done) {
     if(done) done();
@@ -40,6 +37,9 @@ function runOnBrowserStack(caps, test, done){
 var config_file = process.argv[2] || 'conf.js'
 var config = require(config_file).config;
 var test = require(config.test);
+
+var username = process.env.BROWSERSTACK_USERNAME || config.user;
+var accessKey = process.env.BROWSERSTACK_ACCESS_KEY || config.key;
 
 for(var i in config.capabilities){
   var caps = config.capabilities[i];
