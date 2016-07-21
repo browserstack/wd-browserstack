@@ -51,7 +51,7 @@ for(var i in config.capabilities){
       if (error) return console.log(error.red);
       console.log('Connected. Now testing...');
 
-      runOnBrowserStack(caps, test, function(){ bs_local.stop(); });
+      runOnBrowserStack(caps, test, function() { bs_local.stop(function() {}); });
     });
   }
   else {
