@@ -1,7 +1,8 @@
 {
   "name": "wd-browserstack",
-  "version": "1.0.0",
-  "description": "Test github.com:admc/wd.git with browserstack",
+  "version": "0.1.0",
+  "readme": "WD Integration with [BrowserStack](https://www.browserstack.com)",
+  "description": "Selenium examples for WD and BrowserStack Automate",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/browserstack/wd-browserstack.git"
@@ -19,14 +20,13 @@
   },
   "homepage": "https://github.com/browserstack/wd-browserstack#readme",
   "scripts": {
-    "test": "node browserstack_async.js",
-    "test_local": "node scripts/test_local.js",
-    "test_async": "node browserstack_async.js",
-    "test_single": "node browserstack_promises.js",
-    "test_promises": "node browserstack_promises.js"
+    "test": "npm run single && npm run local && npm run parallel",
+    "single": "node scripts/browserstack.js ../conf/single.conf.js",
+    "local": "node scripts/browserstack.js ../conf/local.conf.js",
+    "parallel": "node scripts/browserstack.js ../conf/parallel.conf.js"
   },
   "dependencies": {
-    "browserstack-local": "^0.1.0",
+    "browserstack-local": "^1.0.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.2.0",
     "colors": "^1.1.2",
